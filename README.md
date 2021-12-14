@@ -10,7 +10,12 @@ New in current project:
   - Add delete link;  
   - Add filter;  
   - Add logout;  
-  - Use Bootstrap.  
+  - Use Bootstrap.    
+  
+  
+    
+      
+ ![Project Explorer:](box/project-structure.png)
   
     
  [BACK TO START PAGE](https://github.com/FlorescuAndrei/Start.git) 
