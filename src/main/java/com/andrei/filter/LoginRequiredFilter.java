@@ -34,6 +34,8 @@ public class LoginRequiredFilter implements Filter{
 		
 		System.out.println(req.getRequestURI());
 		
+		//we check if a user name has been entered, 
+		//to prevent the user to directly access todo list via URL(http://localhost:8080/todo.do) and skip the login page
 		if(req.getSession().getAttribute("name")!=null) {
 			chain.doFilter(request, response);
 		}else {
