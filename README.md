@@ -7,10 +7,13 @@ Previews project: [servlets-and-jsp](https://github.com/FlorescuAndrei/servlets-
   - add Todo.
 
 New in current project:
-  - Add delete link; add hashCode() and equals methods in Todo Class   
-  - Add filter - prevent the user to directly access todo list via URL(localhost:8080/todo.do) and skip the login page;  
+  - Add delete link;   
+      - add hashCode() and equals methods in Todo Class   
+  - Add filter  
+      - prevent the user to directly access todo list via URL(localhost:8080/todo.do) and skip the login page;  
   - Add logout;  
-  - Use Bootstrap. Add new dependency: org.webjars/bootstrap; org.webjars/jquery    
+  - Use Bootstrap   
+      - add new dependency: org.webjars/bootstrap; org.webjars/jquery    
   
   
     
