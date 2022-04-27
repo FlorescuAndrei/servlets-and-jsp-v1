@@ -8,7 +8,7 @@ Previews project: [servlets-and-jsp](https://github.com/FlorescuAndrei/servlets-
 
 New in current project:
   - Add delete link;  
-  - Add filter;  
+  - Add filter - prevent the user to directly access todo list via URL(http://localhost:8080/todo.do) and skip the login page;  
   - Add logout;  
   - Use Bootstrap.    
   
