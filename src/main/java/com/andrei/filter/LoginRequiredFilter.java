@@ -11,7 +11,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-
+//Filter is a feature from JavaEE that intercept call to servlets 
 @WebFilter(urlPatterns = "*.do")
 public class LoginRequiredFilter implements Filter{
 	
@@ -34,8 +34,9 @@ public class LoginRequiredFilter implements Filter{
 		
 		System.out.println(req.getRequestURI());
 		
-		//we check if a user name has been entered, 
-		//to prevent the user to directly access todo list via URL(http://localhost:8080/todo.do) and skip the login page
+		//We check if a user name has been entered, 
+		//to prevent the user to directly access todo list via URL(http://localhost:8080/todo.do) and skip the login page.
+		//If there is a name in the session we will allow the request to go throw, as usual, else we will redirect to login page.
 		if(req.getSession().getAttribute("name")!=null) {
 			chain.doFilter(request, response);
 		}else {
